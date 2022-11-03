@@ -24,15 +24,20 @@ body *{
 header{
     margin-bottom: 63px;
 }
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 .card{
+
     padding: 32px 23px;
     text-align: center;
 
     background: #1D1C19;
     border-bottom: 2px solid #F7DD43;
     border-radius: 6px;
-
-    margin-bottom: 32px;
 }
 .card h2{
     display: flex;
@@ -78,3 +83,13 @@ line-height: 125%;
 color: #E1E1E6;
 }
 
+@media (min-width: 700px){
+    #cards{
+        max-width: 874px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 270px;
+    }
+}
